@@ -8,7 +8,10 @@ function isValidSudoku(board: string[][]): boolean {
   const squares = new Map<number, Set<number>>();
 
   for (let i = 0; i < BOARD; i++) {
+    // Every 9 elements you advance one row
     const row = Math.floor(i / 9);
+
+    // The remainder (%) tells you how much you moved within that row
     const column = i % 9;
     const cell = Number(board[row]?.[column]);
     const square = Math.floor(row / 3) * 3 + Math.floor(column / 3);
