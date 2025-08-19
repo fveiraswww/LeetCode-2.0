@@ -1,4 +1,4 @@
-# leetcode-2.0
+# leetcode
 
 To install dependencies:
 
